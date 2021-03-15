@@ -3,6 +3,7 @@
         <head>
             <title>My Portfolio</title>
             <link rel="stylesheet" href="style.css" type="text/css"/>
+            
         </head>
 
         <body>
@@ -32,12 +33,31 @@
 
                 <div class="projects">
                     <h2>Projects</h2>
-                    <ul>
-                        <li>The first computer program</li>
-                        <li>The Analytical Engine</li>
-                        <li>The Ada programming language</li>
-                    </ul>
+                    <div id="program">
+                        <button id="buttonOne">>>The first computer program</button>
+                        <div id="one" class="hidden">
+                            <img src="images/Diagram_for_the_computation_of_Bernoulli_numbers.jpg"/>
+                            <p>The world's first computer program for computing Bernoulli numbers.</p>
+                        </div>
+                    </div>
+
+                    <div id="engine">
+                        <button id="buttonTwo">>>The Analytical Engine</button>
+                        <div id="two" class="hidden">
+                            <img src="images/analyticalmachine_babbage_london.webp"/>
+                            <p>I helped Charles Babbage on topics ranging from math to computation that helped the development of the Analytical Engine.</p>
+                        </div>
+                    </div>
+
+                    <div id="language">
+                        <button id="buttonThree">>>The Ada programming language</button>
+                        <div id="three" class="hidden">
+                            <img src="images/220px-Ada_Mascot_with_slogan.svg.png"/>
+                            <p>My work inspired the United States Department of Defense to name their new programming language after me.</p>
+                        </div>
+                    </div>
                 </div>
+
 
                 <div class="skills">
                     <h2>Skills</h2>
@@ -45,8 +65,13 @@
                 </div>
             </main>
 
+            <script src="script.js"></script>
+
             <footer>
                 <p>Made with Love in London</p>
             </footer>
+            
         </body>
+
+
     </html>

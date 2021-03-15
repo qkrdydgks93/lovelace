@@ -11,7 +11,7 @@ body {
 
 main {
     display: grid;
-    grid-template: 100px 4fr 2fr 2fr  / 60% 40%;    
+    grid-template: 100px 375px auto 200px  / 60% 40%;    
 }
 
 .name {
@@ -37,8 +37,10 @@ a {
 
 .picture {
     grid-area: 2 / 2;
- 
-    padding: 50px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .picture img {
@@ -46,9 +48,12 @@ a {
     max-height: 100%;
 }
 
-li {
+button {
+    border: none;
     font-size: 1.5rem;
-    list-style-type:lower-roman;
+    background-color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .projects {
@@ -72,3 +77,18 @@ h2 {
 footer {
     text-align: center;
 }
+
+.hidden {
+    display: none;
+}
+
+.hidden img {
+    max-width: 50%;
+    min-width: 50%;
+    display: block;
+}
+
+.hidden p {
+    font-size: 1.25rem;
+}
+
